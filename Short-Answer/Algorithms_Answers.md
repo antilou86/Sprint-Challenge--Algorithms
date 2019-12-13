@@ -7,7 +7,7 @@ a) O(n) - with the way this is written, the function has to perform n operations
 b) O(n^2) - if this were only performing one operation for each number leading up to N it would be O(n), but this is performing the operations within the while loop for each integer from 0 to n. doubling up our operations compaired to doing a single loop
 
 
-c) O(n) - this is a recursive function that will call itself as many times as there are bunnies.
+c) O(n) - this is a recursive function that will call itself as many times as there are bunnies. may as well be a for loop.
 
 ## Exercise II
 
@@ -38,7 +38,7 @@ then write a recursive binary search function ->
             find_safe_floor(stories[:len(stories)//2])
 
     if not, everything below it is useless to me
-          
+
         else:
             find_safe_floor(stories[len(stories)//2:])
 

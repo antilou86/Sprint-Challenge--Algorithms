@@ -97,6 +97,22 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
+        for i in l: 
+            set_light_off()
+
+            for num in range(0 - len(l) - 1):
+
+                if can_move_left == False:
+                    swap_item
+                    move_right
+                elif can_move_left and can_move_right and compare_item == 1:
+                    swap_item
+                    move_right
+                elif can_move_left and can_move_right and compare_item == -1:
+                    move_right
+                elif can_move_left == True and can_move_right != True and compare_item == 1:
+                    swap_item
+                    set_light_on()
         pass
 
 
